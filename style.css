@@ -1,0 +1,157 @@
+body {
+    background-color: #f2efea;
+    font-family: Times New Roman;
+}
+
+nav {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+
+.bike-stock {
+    color: white;
+    background: #18110b;
+    width: 150px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 5px 15px;
+    margin: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.brands {
+    display: flex;
+    margin-left: 5px;
+}
+.brands > p {
+    padding: 5px;
+    padding-top: 0;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.one-brand {
+    color: #603830;
+    cursor: pointer;
+    border-right: 1.5px solid #7c7b77;
+}
+.brands-title {
+    color: #7c7b77;
+}
+
+main {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2rem;
+}
+
+main > div {
+    text-align: center;
+    background-color: white;
+}
+main > div > div {
+    border: 1px solid #f2efea;
+    max-width: 90%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+main > div > div > div {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-style: italic;
+
+}
+
+.brand-title {
+    font-size: 15px;
+    margin-bottom: 0;
+    font-family: Arial;
+    text-align: left;
+    text-transform: uppercase;
+    color: #8c8c8c;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+}
+.title {
+    font-size: 20px;
+    font-family: Times New Roman;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #8c8c8c;
+    text-align: left;
+    border-bottom: 1.5px solid #8c8c8c;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+
+}
+
+.bike_img {
+    max-width: 80%;
+    max-height: 150px;
+}
+
+main > div > div > div > p {
+    border-bottom: 1px solid #f2efea;
+}
+
+.price, .color, .stock {
+    font-weight: bold;
+
+}
+
+.price {
+    margin-left: 15px;
+}
+
+.color-p {
+    display: flex;
+}
+.color {
+    margin-left: 18px;
+    display: flex;
+    padding-bottom: 3px;
+}
+
+button {
+    margin: 10px;
+    margin-top: 0;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    background: none;
+    border: 2px solid #603830;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .5s;
+
+}
+button:hover {
+    background: #603830;
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .brands {
+        flex-direction: column;
+    }
+    .brands > p{
+        margin: 3px;
+    }
+    .one-brand {
+        padding: 0px;
+        border-right: 0px;
+    }
+}
